@@ -171,22 +171,42 @@ gap:2rem
 
 .Standard-culm {
     text-align: center;
-
+max-width: 80%;
+margin: 0 auto;
+background-image: url("../assets/bg.png");
+background-repeat: no-repeat;
 }
 .Standard-culm h3 {
     margin: 60px ;
 }
 .btn-01{
     color: #64C8FF;
+    margin-top: 2rem;
+    
 }
 .btn-02{
 color: #F0AA00;
+margin-top: 2rem;
+
 }
 .btn-03{
 color: #8700FF;
+margin-top: 2rem;
 }
-.Standard-culm  
-    .btn-01 .btn-02 .btn-03{
+
+@media screen and (max-width:576px){
+       .display-flex{
+        flex-direction: column;
+
+    }
+    .arrow-icon i{
+        display: none;
+    }
+}
+.arrow-icon i{
+    background-color: #FEA301;
     margin-top: 2rem;
-    border-radius: 2rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 3rem;
+    color: white;
 }
