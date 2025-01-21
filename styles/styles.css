@@ -1,14 +1,14 @@
-
-
 :root {
     --bg-color: #f7f7f7 --footer-color: #01acfd;
     --fon-family: "Quicksand", serif;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +22,10 @@
 
 }
 
+.header-section {
+    border-bottom: none;
+}
+
 .nav-item {
     display: flex;
     justify-content: space-between;
@@ -29,21 +33,30 @@
     padding: 1rem 0 0 0;
 }
 
+.icon {
+    display: none;
+}
+
 ul a:nth-child(1) {
     color: #FEA301;
 }
+
 ul a:nth-child(2) {
-color: #01ACFD;
+    color: #01ACFD;
 }
+
 ul a:nth-child(3) {
     color: #05D4DF;
 }
+
 ul a:nth-child(4) {
     color: #5D58EF;
 }
-.nav-item a{
-padding: 0 15px;
+
+.nav-item a {
+    padding: 0 15px;
 }
+
 nav-item .nav-list {
     margin-left: 1rem;
 }
@@ -66,31 +79,114 @@ nav {
 .btn-contact {
     background-color: #FBBA56;
     border-radius: 12px;
-    padding: 12px 40px ;
+    padding: 12px 40px;
 }
-.banner-section{
+
+.banner-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
+
+
 }
-.btn-1{
+
+.btn-1 {
     color: #FEA301;
 }
-.btn-2{
+
+.btn-2 {
     color: #01ACFD;
 }
-.btn-praimary{
-background-color: black;
-color: white;
-padding: 10px 20px ;
-margin-top: 12px;
-border-radius: 12px;
+
+.btn-praimary {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 12px;
+    border-radius: 12px;
 }
-.img-icon img{
-width: 360px;
+
+.img-icon img {
+    width: 360px;
 }
-.banner-section p{
+
+.banner-section p {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-item {
+        display: none;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .header-section {
+        border-bottom: 1px solid orange;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header-section .d-none {
+
+        display: none;
+    }
+
+    .banner-content {
+        margin-top: 10px;
+    }
+
+    .icon {
+        display: flex;
+        margin-right: 20px;
+        font-size: 20px;
+
+    }
+
+}
+
+.card {
+    box-sizing: border-box;
+    border: 0.64px solid rgb(222, 245, 255);
+    border-radius: 12px;
+
+    box-shadow: inset 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    text-align: center;
+}
+
+.display-flex {
+    display: flex;
+    gap: 20px;
+
+}
+.display-flex .card{
+gap:2rem
+}
+
+.Standard-culm {
+    text-align: center;
+
+}
+.Standard-culm h3 {
+    margin: 60px ;
+}
+.btn-01{
+    color: #64C8FF;
+}
+.btn-02{
+color: #F0AA00;
+}
+.btn-03{
+color: #8700FF;
+}
+.Standard-culm  
+    .btn-01 .btn-02 .btn-03{
+    margin-top: 2rem;
+    border-radius: 2rem;
 }
