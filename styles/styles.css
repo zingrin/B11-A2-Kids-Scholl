@@ -1,1 +1,96 @@
 
+
+:root {
+    --bg-color: #f7f7f7 --footer-color: #01acfd;
+    --fon-family: "Quicksand", serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    font-family: var(--fon-family);
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 0 0;
+}
+
+ul a:nth-child(1) {
+    color: #FEA301;
+}
+ul a:nth-child(2) {
+color: #01ACFD;
+}
+ul a:nth-child(3) {
+    color: #05D4DF;
+}
+ul a:nth-child(4) {
+    color: #5D58EF;
+}
+.nav-item a{
+padding: 0 15px;
+}
+nav-item .nav-list {
+    margin-left: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: 0 auto;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-contact {
+    background-color: #FBBA56;
+    border-radius: 12px;
+    padding: 12px 40px ;
+}
+.banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.btn-1{
+    color: #FEA301;
+}
+.btn-2{
+    color: #01ACFD;
+}
+.btn-praimary{
+background-color: black;
+color: white;
+padding: 10px 20px ;
+margin-top: 12px;
+border-radius: 12px;
+}
+.img-icon img{
+width: 360px;
+}
+.banner-section p{
+    margin-top: 10px;
+}
